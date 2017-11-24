@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../OOP/.idea/OOP.iml" filepath="$PROJECT_DIR$/../OOP/.idea/OOP.iml" />
+      <module fileurl="file://E:/Git/html/.idea/html.iml" filepath="E:/Git/html/.idea/html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/myapp.iml" filepath="$PROJECT_DIR$/.idea/myapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WebUI/.idea/webUI.iml" filepath="$PROJECT_DIR$/../WebUI/.idea/webUI.iml" />
+    </modules>
+  </component>
+</project>
