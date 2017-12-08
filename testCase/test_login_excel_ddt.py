@@ -9,7 +9,7 @@ from page.login import *
 from utiles.data import *
 
 @ddt.ddt
-class BaiduExcelTest(webdriver,Login):
+class BaiduExcelTest(UiTestcase,Login):
 	@ddt.data(*Datahelper.readExcels())
 	@ddt.unpack
 	def test_login_username_passwd_null(self, username, password, expected):
