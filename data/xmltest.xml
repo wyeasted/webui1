@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataDriven>
+    <login username="wuyaf@outlook.com" password="admin"></login>
+    <nullText>请您输入手机/邮箱/用户名</nullText>
+    <passwdNull>请您输入密码</passwdNull>
+    <codeNull>请您输入验证码</codeNull>
+</DataDriven>
