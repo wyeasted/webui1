@@ -4,6 +4,7 @@
 import csv
 import os
 import  xlrd
+import xml.dom.minidom
 
 def readlists():
 	lists=[
@@ -41,6 +42,21 @@ class Datahelper(object):
 		for row in range(1, sheet.nrows):
 			rows.append(list(sheet.row_values(row, 0, sheet.ncols)))
 		return rows
+
+	@staticmethod
+	def getXmlData(self,value):
+		dom = xml.dom.minidom.parse(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data','xmltest.xml'))
+		db = dom.documentElement
+		name = db.getElementsByTagName(value)
+		nameValue = name[0]
+		return nameValue.firstChild.data
+
+	def getXmlUser(self,parent, child):
+		dom = xml.dom.minidom.parse(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data','xmltest.xml'))
+		db = dom.documentElement
+		itemlist = db.getElementsByTagName(parent)
+		item = itemlist[0]
+		return item.getAttribute(child)
 
 
 
